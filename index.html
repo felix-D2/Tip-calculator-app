@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css" />
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -13,32 +14,101 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
+   <script src="script.js" defer></script> <!-- "defer" permet d'executer le script après l'HTML -->
 </head>
 <body>
 
-  Bill
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+    
 
-  Number of People
 
-  Tip Amount
-  / person
 
-  Total
-  / person
+  <section>
+    <!-- Image -->
 
-  Reset
+    <div id="part1">
+
+      <div id="bill">
+        <h1>Bill</h1>
+        <p>
+          <!--IMG $-->
+          <input type="number" min=0 placeholder="0" id="billValue" />
+        </p>
+        
+      </div>
+      
+      <div id="tip">      
+        <h1>Select Tip %</h1>
+      
+      <div id = "btnList">
+        <p>
+          <input type="button" value="5%" clas="btn" />
+        </p>
+
+        <p>
+          <input type="button" value="10%" id="btn" />
+        </p>
+        <p>
+          <input type="button" value="15%" id="btn" />
+        </p>
+          
+        <p>
+          <input type="button" value="25%" id="btn" />
+        </p>
+        
+        <p>
+          <input type="button" value="50%" id="btn" />
+        </p>
+      </div>
+
+      <p>
+        <input type="text" placeholder="Custom" id="btn_custom" maxlength="4" />
+      </p>
+        
+        
+        
+      </div>
+
+      <div id="numberOfPeople">
+        <h1>Number of People</h1>
+        <p>
+          <!--IMG people-->
+          <input type="number" min=0 placeholder="0" id="numberOfPeopleValue" />
+        </p>
+      </div>
+    </div>
+
+
+    <div id="part2">
+      <div id="tipAmount">
+        <h1>Tip Amount</h1>
+        <p>/ person</p>
+        <p id="tipAmountValue"></p>
+      </div>
+
+      <div id="total">
+        <h1>Total</h1>
+        <p>/ person</p>
+        <p id="totalValue"></p>
+      </div>
+
+      <div id="reset">
+        <input type="button" value="Reset" id="btn-50" />
+      </div>
+    </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+</section>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/felix-D2" target="blank">Félix DAVOUST</a>.
+    </div>
+  </footer>
+
+
+  
+
 </body>
 </html>

@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body{
+    background-color:#C5E4E7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+section{
+    background-color:#ffffff;
+    width: 850px;
+    height: 450px;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+
+#part1{
+    width: 44.7%; /*380 px*/
+    height: 86.6%; /*390 px*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#bill{
+    width: 80%;
+    height: 20%;
+}
+#billValue{
+    background-color: #F3F8FB;
+    width: 95%;
+    height: 40%;
+
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+#tip{
+    width: 80%;
+    height: 35%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#tip h1{
+    width:100%;
+}
+#tip input{
+    margin: 10px;
+    border-radius: 6px;
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+}
+#tip input{
+    background-color: #00474B;
+}
+#tip #btn_custom{
+    background-color: #F1F9FB;
+}
+/* background-color: #26C2AD; selected*/
+
+#tip input:hover{
+    background-color: #9FE8DF;
+}
+#tip input selected{
+    background-color: #26C2AD;
+}
+
+
+#numberOfPeople{
+    border: solid;
+    width: 80%;
+    height: 20%;
+}
+#numberOfPeopleValue{
+    background-color: #F3F8FB;
+    width: 95%;
+    height: 30px;
+
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+
+
+
+#part2{
+    background-color: #00474B;
+    width: 380px;
+    height: 390px;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tipAmount{
+    background-color:rgb(112, 112, 117);
+    width: 80%;
+    height: 20%;
+
+    position: relative;
+    top: 8%;
+}
+
+#total{
+    background-color:rgb(112, 112, 117);
+    width: 80%;
+    height: 20%;
+
+    position: relative;
+    top: 13%;
+}
+
+#reset{
+    background-color:rgb(112, 112, 117);
+    width: 80%;
+    height: 20%;
+
+    position: relative;
+    top: 35%;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
