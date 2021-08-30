@@ -11,6 +11,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
@@ -22,82 +23,73 @@
 
     
 
+<img src="images/logo.svg" alt="logo" id="logoSplitter"></img>
 
 
-  <section>
-    <!-- Image -->
+  <section>  
+    
+      <div id="part1">
 
-    <div id="part1">
-
-      <div id="bill">
-        <h1>Bill</h1>
-        <p>
-          <!--IMG $-->
-          <input type="number" min=0 placeholder="0" id="billValue" />
-        </p>
-        
-      </div>
-      
-      <div id="tip">      
-        <h1>Select Tip %</h1>
-      
-      <div id = "btnList">
-        <p>
-          <input type="button" value="5%" clas="btn" />
-        </p>
-
-        <p>
-          <input type="button" value="10%" id="btn" />
-        </p>
-        <p>
-          <input type="button" value="15%" id="btn" />
-        </p>
+        <div id="bill">
+          <h1>Bill</h1>
+            <form id="formBill">
+              <input type="number" min=0 placeholder="0" id="billValue" /> <!-- step=0.01 -->
+            </form>
+          <img src="images/icon-dollar.svg" alt="icon dollar"></img>
           
-        <p>
-          <input type="button" value="25%" id="btn" />
-        </p>
+        </div>
         
-        <p>
-          <input type="button" value="50%" id="btn" />
-        </p>
-      </div>
-
-      <p>
-        <input type="text" placeholder="Custom" id="btn_custom" maxlength="4" />
-      </p>
+        <div id="tip">      
+          <h1>Select Tip %</h1>
         
+          <button onClick="btnSelecting(0, 5);">5%</button>
+          <button onClick="btnSelecting(1, 10);">10%</button>
+          <button onClick="btnSelecting(2, 15);">15%</button>
+          <button onClick="btnSelecting(3, 25);">25%</button>
+          <button onClick="btnSelecting(4, 50);">50%</button>
+
+          <input type="number" min=0 placeholder="Custom" />
+          
+        </div>
+
+        <form>
+
+        <div id="numberOfPeople">
+
+          <p id="erreurPeople"></p>
+          <h1>Number of People</h1>
+            
+            <input type="number" min=0 placeholder="0" id="numberOfPeopleValue" />
+            
+            <img src="images/icon-person.svg" alt="icon person"></img>
+
+            
+          </div>
+      </div>
+
+
+      <div id="part2">
+        <div id="tipAmount">
+          <h1>Tip Amount</h1>
+          <p>/ person</p>
+          <div id="tipAmountValue"></div>
+        </div>
+
+        <div id="total">
+          <h1>Total</h1>
+          <p>/ person</p>
+          <div id="totalValue"></div>
+        </div>
+
         
+        <div id="reset">
+          
+          <button type="reset" form="formBill" >Reset</button> <!--onClick="resetting();" -->
+          
+        </div>
         
       </div>
-
-      <div id="numberOfPeople">
-        <h1>Number of People</h1>
-        <p>
-          <!--IMG people-->
-          <input type="number" min=0 placeholder="0" id="numberOfPeopleValue" />
-        </p>
-      </div>
-    </div>
-
-
-    <div id="part2">
-      <div id="tipAmount">
-        <h1>Tip Amount</h1>
-        <p>/ person</p>
-        <p id="tipAmountValue"></p>
-      </div>
-
-      <div id="total">
-        <h1>Total</h1>
-        <p>/ person</p>
-        <p id="totalValue"></p>
-      </div>
-
-      <div id="reset">
-        <input type="button" value="Reset" id="btn-50" />
-      </div>
-    </div>
-  
+   </form> 
 </section>
 
   <footer>

@@ -12,6 +12,10 @@ body{
 
 }
 
+#logoSplitter {
+    position: absolute;
+    top: 5%;
+}
 
 section{
     background-color:#ffffff;
@@ -46,14 +50,34 @@ section{
 }
 #billValue{
     background-color: #F3F8FB;
-    width: 95%;
-    height: 40%;
+    width: 345px;
+    height: 45px;
+    border-radius: 5px;
 
     position: relative;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    text-align: right;
     cursor: pointer;
+    outline-color: #58d1c3;
+
+    font-size: 1.5em;
+    color: #0D4443;
+    font-weight: bold;
+    font-family: 'Space Mono', monospace, serif;
+}
+#bill img{
+    position: relative;
+    left: -5px;
+    top: -26px;
+}
+#part1 h1{
+    color: #647879;
+    font-size: 1.2em;
+
+    font-family: 'Space Mono', monospace, serif;
 }
 
 #tip{
@@ -65,42 +89,98 @@ section{
 #tip h1{
     width:100%;
 }
-#tip input{
+#tip button{
     margin: 10px;
     border-radius: 6px;
     width: 80px;
     height: 35px;
     cursor: pointer;
-}
-#tip input{
-    background-color: #00474B;
-}
-#tip #btn_custom{
-    background-color: #F1F9FB;
-}
-/* background-color: #26C2AD; selected*/
 
-#tip input:hover{
+    background-color: #00474B;
+
+    font-size: 1.2em;
+    color: #F3FFFF;
+    font-weight: bold;
+    font-family: 'Space Mono', monospace, serif;
+}
+
+
+#tip input{
+    margin: 10px;
+    border-radius: 5px;
+    width: 80px;
+    height: 35px;
+
+    background-color: #F1F9FB;
+    cursor: pointer;
+    text-align: right;
+
+    outline-color: #58d1c3;
+
+    font-size: 1.2em;
+    color: #0D4443;
+    font-weight: bold;
+}
+
+#tip button:hover{
     background-color: #9FE8DF;
+    color: #00474B;
 }
-#tip input selected{
-    background-color: #26C2AD;
-}
+
 
 
 #numberOfPeople{
-    border: solid;
     width: 80%;
     height: 20%;
 }
 #numberOfPeopleValue{
     background-color: #F3F8FB;
-    width: 95%;
-    height: 30px;
+    width: 350px;
+    height: 47px;
+    border-radius: 5px;
 
     position: relative;
     left: 50%;
     transform: translatex(-50%);
+    cursor: pointer;
+    text-align: right;
+
+    outline-color: #58d1c3;
+    font-size: 1.5em;
+    color: #0D4443;
+    font-weight: bold;
+    font-family: 'Space Mono', monospace, serif;
+}
+/*  OU
+#numberOfPeopleValue:focus{
+     outline: none !important; 
+    border:1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+} */
+#numberOfPeopleValue.erreur{
+    outline-width: 1.8px;
+    outline-color: #b46754;
+}
+
+#numberOfPeople img{
+    position: relative;
+    top: -25px;
+    left: 5px;
+    transform: translate(-50%, -50%);
+
+    width: 15px;
+    
+}
+#erreurPeople{
+    height: 20px;
+    position: relative;
+    left: 230px;
+    top: 24px;    
+
+    color: #b46754;
+    font-weight: bold;
+    font-family: 'Space Mono', monospace, serif;
+    font-size: 0.9em;
 }
 
 
@@ -116,9 +196,28 @@ section{
     flex-direction: column;
     align-items: center;
 }
+#part2 h1{
+    font-size: 0.9em;
+    color: #F3FFFF;
+    font-family: 'Space Mono', monospace, serif;
+}
+#part2 p{
+    font-size: 0.7em;
+    color: #7e9fa1;
+    font-family: 'Space Mono', monospace, serif;
+}
+#tipAmountValue, #totalValue{
+    font-size: 2em;
+    color: #23C3AD;
+    font-family: 'Space Mono', monospace, serif;
+    font-weight: bold;
+
+    position: relative;
+    left: 200px;
+    top: -40px;
+}
 
 #tipAmount{
-    background-color:rgb(112, 112, 117);
     width: 80%;
     height: 20%;
 
@@ -126,8 +225,8 @@ section{
     top: 8%;
 }
 
+
 #total{
-    background-color:rgb(112, 112, 117);
     width: 80%;
     height: 20%;
 
@@ -136,13 +235,26 @@ section{
 }
 
 #reset{
-    background-color:rgb(112, 112, 117);
-    width: 80%;
-    height: 20%;
-
     position: relative;
     top: 35%;
 }
+#reset button{
+    cursor: pointer;
+    width: 307px;
+    height: 46px;
+    border-radius: 5px;
+    background-color: #26C2AD;
+
+    font-size: 1.4em;
+    color: #00474B;
+    font-family: 'Space Mono', monospace, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#reset button:hover{
+    background-color: #9FE8DF;
+}
+
 
 
 
