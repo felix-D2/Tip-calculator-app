@@ -18,53 +18,51 @@
 
    <script src="script.js" defer></script> <!-- "defer" permet d'executer le script après l'HTML -->
 </head>
-<body>
 
 
-    
 
-<img src="images/logo.svg" alt="logo" id="logoSplitter"></img>
+<body> 
 
+<img src="images/logo.svg" alt="logo" id="logoSplitter">
 
   <section>  
     
       <div id="part1">
-
-        <div id="bill">
-          <h1>Bill</h1>
-            <form id="formBill">
-              <input type="number" min=0 placeholder="0" id="billValue" /> <!-- step=0.01 -->
-            </form>
-          <img src="images/icon-dollar.svg" alt="icon dollar"></img>
-          
-        </div>
-        
-        <div id="tip">      
-          <h1>Select Tip %</h1>
-        
-          <button onClick="btnSelecting(0, 5);">5%</button>
-          <button onClick="btnSelecting(1, 10);">10%</button>
-          <button onClick="btnSelecting(2, 15);">15%</button>
-          <button onClick="btnSelecting(3, 25);">25%</button>
-          <button onClick="btnSelecting(4, 50);">50%</button>
-
-          <input type="number" min=0 placeholder="Custom" />
-          
-        </div>
-
-        <form>
-
-        <div id="numberOfPeople">
-
-          <p id="erreurPeople"></p>
-          <h1>Number of People</h1>
-            
-            <input type="number" min=0 placeholder="0" id="numberOfPeopleValue" />
-            
-            <img src="images/icon-person.svg" alt="icon person"></img>
-
-            
+        <form id="formSplitter">
+          <div id="bill">
+            <h1>Bill</h1>
+              
+            <input type="number" min=0 placeholder="0" id="billValue"> <!-- step=0.01 -->
+              
+            <img src="images/icon-dollar.svg" alt="icon dollar">
           </div>
+          
+          <div id="tip">      
+            <h1>Select Tip %</h1>
+            
+            
+            <input type="button" onClick="btnSelecting(0, 5);" class="buttonTip" value="5%">
+            <input type="button" onClick="btnSelecting(1, 10);" class="buttonTip" value="10%">
+            <input type="button" onClick="btnSelecting(2, 15);" class="buttonTip" value="15%">
+            <input type="button" onClick="btnSelecting(3, 25);" class="buttonTip" value="25%">
+            <input type="button" onClick="btnSelecting(4, 50);" class="buttonTip" value="50%">
+
+            <input type="number" min=0 placeholder="Custom" id="customTip">
+          </div>
+
+          
+
+          <div id="numberOfPeople">
+
+            <p id="erreurPeople"></p>
+            <h1>Number of People</h1>
+              
+              <input type="number" min=0 placeholder="0" id="numberOfPeopleValue">
+              
+              <img src="images/icon-person.svg" alt="icon person">
+          </div>
+        </form>
+
       </div>
 
 
@@ -83,14 +81,14 @@
 
         
         <div id="reset">
-          
-          <button type="reset" form="formBill" >Reset</button> <!--onClick="resetting();" -->
-          
+          <form>
+            <button type="reset" onClick="resetting();" form="formSplitter" >Reset</button>
+          </form>
         </div>
         
       </div>
-   </form> 
-</section>
+  </section>
+
 
   <footer>
     <div class="attribution">
@@ -98,9 +96,6 @@
       Coded by <a href="https://github.com/felix-D2" target="blank">Félix DAVOUST</a>.
     </div>
   </footer>
-
-
-  
 
 </body>
 </html>

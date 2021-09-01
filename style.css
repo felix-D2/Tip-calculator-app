@@ -9,7 +9,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 #logoSplitter {
@@ -30,7 +29,7 @@ section{
 
     display: flex;
     justify-content: space-around;
-    align-items: center
+    align-items: center;
 }
 
 
@@ -42,11 +41,16 @@ section{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+    padding-left: 25px;
 }
 
 #bill{
     width: 80%;
     height: 20%;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 #billValue{
     background-color: #F3F8FB;
@@ -56,7 +60,7 @@ section{
 
     position: relative;
     top: 35%;
-    left: 50%;
+    left: 57%;
     transform: translate(-50%, -50%);
 
     text-align: right;
@@ -70,7 +74,7 @@ section{
 }
 #bill img{
     position: relative;
-    left: -5px;
+    left: 15px;
     top: -26px;
 }
 #part1 h1{
@@ -81,20 +85,25 @@ section{
 }
 
 #tip{
-    width: 80%;
-    height: 35%;
+    width: 100%;
+    height: 38%;
     display: flex;
     flex-wrap: wrap;
+
+    margin-bottom: -5px;
 }
 #tip h1{
     width:100%;
 }
-#tip button{
-    margin: 10px;
+#tip .buttonTip{
+    margin: 5px 10px;
     border-radius: 6px;
-    width: 80px;
-    height: 35px;
+    width: 100px;
+    height: 40px;
     cursor: pointer;
+
+    position: relative;
+    left: -3%;
 
     background-color: #00474B;
 
@@ -105,11 +114,14 @@ section{
 }
 
 
-#tip input{
+#customTip{
     margin: 10px;
     border-radius: 5px;
-    width: 80px;
-    height: 35px;
+    width: 100px;
+    height: 40px;
+
+    position: relative;
+    left: -3%;
 
     background-color: #F1F9FB;
     cursor: pointer;
@@ -122,7 +134,7 @@ section{
     font-weight: bold;
 }
 
-#tip button:hover{
+#tip > .buttonTip:hover{
     background-color: #9FE8DF;
     color: #00474B;
 }
@@ -140,7 +152,7 @@ section{
     border-radius: 5px;
 
     position: relative;
-    left: 50%;
+    left: 57%;
     transform: translatex(-50%);
     cursor: pointer;
     text-align: right;
@@ -165,11 +177,10 @@ section{
 #numberOfPeople img{
     position: relative;
     top: -25px;
-    left: 5px;
+    left: 15px;
     transform: translate(-50%, -50%);
 
     width: 15px;
-    
 }
 #erreurPeople{
     height: 20px;
@@ -191,6 +202,7 @@ section{
     width: 380px;
     height: 390px;
     border-radius: 12px;
+    margin-left: -20px;
 
     display: flex;
     flex-direction: column;
@@ -254,20 +266,99 @@ section{
 #reset button:hover{
     background-color: #9FE8DF;
 }
-
-
-
-
-
-
-
-
-
+#reset button.disabled{
+    background-color: #0D686D;
+    cursor: auto;
+}
 
 
 
 footer{
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
 }
 
+
+
+
+@media screen and (max-width: 750px)
+{/* vertion mobile ou inférieur à max-width */
+
+    section{
+        flex-direction: column ;
+
+
+        width: 375px;
+        height: 860px;
+        position: absolute;
+        top: 130px;
+        transform: translate(0, 0);
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    #part1{
+        position: relative;
+        top: -45px;
+
+        height: 450px;
+        width: 330px;
+    }
+
+    #part2{
+        height: 250px;
+        width: 325px;
+
+        margin-left: 0;
+    }
+
+
+
+    #bill img{
+        top: -19px;
+    }
+
+
+
+    #tip{
+        padding-bottom: 30px;
+        align-items: center;        
+    }
+    #tip h1{
+        margin-bottom:10px;
+    }
+    #tip .buttonTip{
+        width: 140px;
+        height: 50px;
+    }
+    #customTip{
+        width: 140px;
+        height: 50px;
+    }
+    #tip .buttonTip, #customTip{
+        font-size: 1.5em;
+    }
+
+
+
+
+    #tipAmount, #total{
+        top: 50px;
+    }
+    #tipAmount{
+        margin-bottom: 10px;
+    }
+    #reset{
+        top: 70px;
+    }
+    #tipAmountValue, #totalValue{
+        left: 170px;
+    }
+
+
+    footer{
+        position: absolute;
+        bottom: -400px;
+    }
+ }
