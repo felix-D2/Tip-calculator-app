@@ -78,14 +78,14 @@ function btnSelecting(btnNumber, tipValue) {
             console.log("btn " + btnNumber + " cliqué");
             arrayBtn[i] += 1;
             tip = tipValue;
-            custumTip.value=0;
+            custumTip.value="";
         }
         else if (i == btnNumber && arrayBtn[i] == 1) {
             currentButton.removeAttribute("style");
             custumTip.removeAttribute("style");
             arrayBtn[i] = 0;
             tip = 0;
-            custumTip.value=0;
+            custumTip.value="";
         }
         else if (btnNumber == -1) { // To reseting function and custom tip
             currentButton.removeAttribute("style");
@@ -95,7 +95,7 @@ function btnSelecting(btnNumber, tipValue) {
             currentButton.removeAttribute("style");
             custumTip.removeAttribute("style");
             arrayBtn[i] = 0;
-            custumTip.value=0;
+            custumTip.value="";
         }
         currentButton = currentButton.nextElementSibling;
     }
