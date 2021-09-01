@@ -302,11 +302,12 @@ footer{
         flex-direction: column ;
 
 
-        width: auto;
+        width: 375px;
         height: 860px;
         position: absolute;
         top: 130px;
-        transform: translate(0, 0);
+        left:50%;
+        transform: translate(-50%, 0);
 
         justify-content: center;
         align-items: center;
@@ -331,9 +332,7 @@ footer{
     }
 
 
-    #billValue{
-        padding-right: 2px;
-    }
+
     #bill img{
         top: -19px;
     }
@@ -354,14 +353,9 @@ footer{
     #customTip{
         width: 140px;
         height: 50px;
-        padding-right: 2px;
     }
     #tip .buttonTip, #customTip{
         font-size: 1.5em;
-    }
-
-    #numberOfPeopleValue{
-        padding-right: 2px;
     }
 
 
