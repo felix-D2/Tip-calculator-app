@@ -284,11 +284,25 @@ footer{
 @media screen and (max-width: 750px)
 {/* vertion mobile ou inférieur à max-width */
 
+
+    body
+    {
+        left: 0; /* à 50%/50% du parent référent */
+        right: 0;
+        transform: translate(0); /* décalage de 50% de sa propre taille */
+
+        width: auto;
+        height:990px;
+    }
+
+
+
+
     section{
         flex-direction: column ;
 
 
-        width: 375px;
+        width: auto;
         height: 860px;
         position: absolute;
         top: 130px;
@@ -304,6 +318,8 @@ footer{
 
         height: 450px;
         width: 330px;
+
+        
     }
 
     #part2{
@@ -311,6 +327,7 @@ footer{
         width: 325px;
 
         margin-left: 0;
+        
     }
 
 
@@ -354,11 +371,22 @@ footer{
     }
     #tipAmountValue, #totalValue{
         left: 170px;
+        width: 110px;
+    }
+
+    #erreurPeople{
+        width: 120px;
+        left: 210px;
     }
 
 
     footer{
         position: relative;
         bottom: -970px;
+
+        
     }
+
+
+
  }
