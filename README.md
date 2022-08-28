@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/felix-D2...](https://github.com/felix-D2/Tip-calculator-app)
-- Live Site URL: [my Site](https://your-live-site-url.com](https://felix-d2.github.io/Tip-calculator-app/)
+- Live Site URL: [my Site](https://felix-d2.github.io/Tip-calculator-app/)
 
 ## My process
 
