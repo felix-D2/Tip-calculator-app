@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/felix-D2/Tip-calculator-app]([https://your-solution-url.com](https://github.com/felix-D2/Tip-calculator-app))
-- Live Site URL: [https://felix-d2.github.io/Tip-calculator-app/]([https://your-live-site-url.com](https://felix-d2.github.io/Tip-calculator-app/))
+- Solution URL: [https://github.com/felix-D2/Tip-calculator-app](https://your-solution-url.com](https://github.com/felix-D2/Tip-calculator-app)
+- Live Site URL: [https://felix-d2.github.io/Tip-calculator-app/](https://your-live-site-url.com](https://felix-d2.github.io/Tip-calculator-app/)
 
 ## My process
 
